@@ -3,6 +3,14 @@ sandpiper is implement of N4C architecture in NodeJS.
 
 about N4C architecture  @see [n4c project](https://github.com/aimingoo/n4c).
 
+###Table of Contents
+  * [install](#install)
+  * [run as resource service/center](#run-as-resource-servicecenter)
+  * [import and usage](#import-and-usage)
+  * [testcase](#testcase)
+  * [run testcase of interfaces](#run-testcase-of-interfaces)
+  * [history](#history)
+
 #install
 install and start etcd service first(example in macosx):
 ```bash
