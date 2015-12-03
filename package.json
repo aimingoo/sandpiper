@@ -11,7 +11,7 @@
   "dependencies": {
     "crc-32": "^0.3.0",
     "node-etcd-promise": "^1.0.7",
-    "redpoll": "1.0.0",
+    "redpoll": "^1.0.0",
     "request": "^2.65.0"
   },
   "main": "sandpiper.js",
@@ -20,5 +20,5 @@
     "test": "node -e 'var pedt = require(\"./sandpiper.js\"); console.log(\"PEDT version:\", pedt.version);'"
   },
   "license": "Apache-2.0",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

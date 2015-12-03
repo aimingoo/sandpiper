@@ -1,49 +1,60 @@
-#sandpiper
+# sandpiper
+
 sandpiper is implement of N4C architecture in NodeJS.
 
 about N4C architecture  @see [n4c project](https://github.com/aimingoo/n4c).
 
-###Table of Contents
-  * [install](#install)
-  * [run as resource service/center](#run-as-resource-servicecenter)
-  * [import and usage](#import-and-usage)
-  * [testcase](#testcase)
-  * [run testcase of interfaces](#run-testcase-of-interfaces)
-  * [history](#history)
+### Table of Contents
 
-#install
+* [install](#install)
+* [run as resource service/center](#run-as-resource-servicecenter)
+* [import and usage](#import-and-usage)
+* [testcase](#testcase)
+* [run testcase of interfaces](#run-testcase-of-interfaces)
+* [history](#history)
+
+# install
+
 install and start etcd service first(example in macosx):
-```bash
+
+``` bash
 > brew install etcd
 > etcd
 ```
+
 and install sandpiper by npm+nodejs
+
 > npm install sandpiper
 
-#run as resource service/center
+# run as resource service/center
+
 > npm start
 
-#import and usage
+# import and usage
+
 > @see $(sandpiper)/sandpiper.js
 
-```javascript
+``` javascript
 var pedt = require('sandpiper');
 pedt.run(...)
 ```
+
 the sandpiper run at n4c unlimited+dispatcher node.
 
-#testcase
+# testcase
+
 try these:
-```bash
+
+``` bash
 > # start etcd fist
 
 > # run sandpiper as resource service
 > npm start
 
-> # run sandpiper base test
+> # run sandpiper base test in a new shell
 > npm test
 
-> # run full testcase
+> # or, run full testcase in a new shell
 > node testcase/t_tasks.js
 [INFO] done.
 hi
@@ -62,9 +73,12 @@ the worker node initialized.
 true
 [ { x: '100', y: '200', info: 'HELLO', p1: 'default value' } ]
 ```
+
 # run testcase of interfaces
+
 and then, try next:
-```bash
+
+``` bash
 > bash testcase/t_interfaces.sh
 ===============================================================
 :: registed items in init_worker_node.js
@@ -90,6 +104,9 @@ Done.
 ```
 
 # history
-```text
+
+``` text
+2015.12.04  v1.0.1 released.
+	- minor update.
 2015.11.14	v1.0.0 released.
 ```
